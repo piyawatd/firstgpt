@@ -37,6 +37,9 @@
         <div id="content">
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <button id="sidebarToggle" class="btn btn-link rounded-circle me-3">
+                    <i class="fa fa-bars"></i>
+                </button>
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
