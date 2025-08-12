@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- SB Admin 2 theme -->
     <link href="https://cdn.jsdelivr.net/npm/startbootstrap-sb-admin-2@4.1.4/css/sb-admin-2.min.css" rel="stylesheet">
+    @stack('styles')
 </head>
 <body id="page-top">
 <div id="wrapper">
@@ -28,10 +29,17 @@
                 <span>Dashboard</span>
             </a>
         </li>
+
         <li class="nav-item">
             <a class="nav-link" href="{{ route('tags.index') }}">
                 <i class="fas fa-fw fa-tags"></i>
                 <span>Tags</span>
+        </li>
+        <!-- Nav Item - Categories -->
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('categories.index') }}">
+                <i class="fas fa-fw fa-list"></i>
+                <span>Categories</span>
             </a>
         </li>
     </ul>
@@ -71,5 +79,6 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/startbootstrap-sb-admin-2@4.1.4/js/sb-admin-2.min.js"></script>
+@stack('scripts')
 </body>
 </html>
