@@ -29,6 +29,12 @@
                 <span>Dashboard</span>
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('tags.index') }}">
+                <i class="fas fa-fw fa-tags"></i>
+                <span>Tags</span>
+        </li>
         <!-- Nav Item - Categories -->
         <li class="nav-item">
             <a class="nav-link" href="{{ route('categories.index') }}">
